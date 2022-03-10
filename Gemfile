@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-ruby "2.3.5"
+ruby "2.6.6"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.11'
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.10'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'puma'
+gem 'puma', '4.3.11'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails'

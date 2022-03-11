@@ -50,6 +50,14 @@
         <li>
           <%= link_to 'Register', [:signup] %>
         </li>
+        <li>
+          <% if current_user %>
+            Signed in as <%= current_user.email %> | <%= link_to "Logout", 'logout' %>
+          <% else %>
+            <%= link_to "Login", 'login' %>
+          <% end %>
+
+        </li>
       </ul>
     </div>
   </div>

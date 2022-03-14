@@ -34,7 +34,7 @@ RSpec.describe Product, type: :model do
       it 'does not save if email already exists' do
         @user = User.new(first_name: 'Jimmy', last_name: 'Smith', email: 'jimmysmith@gmail.com', password: 'example', password_confirmation: 'example')
         @user.save
-        @user2 = User.new(first_name: 'Jimmy', last_name: 'Smith', email: 'jimmysmith@gmail.com', password: 'example', password_confirmation: 'example')
+        @user2 = User.new(first_name: 'Jimmy', last_name: 'Smith', email: 'Jimmysmith@gmail.com', password: 'example', password_confirmation: 'example')
         expect(@user2.save).to be false
       end
     end

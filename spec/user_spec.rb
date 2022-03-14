@@ -38,5 +38,11 @@ RSpec.describe Product, type: :model do
         expect(@user2.save).to be false
       end
     end
+    context 'minimum password length' do
+      it 'reject requires password with minimum length of 5' do
+        @user = User.new(first_name: 'Jimmy', last_name: 'Smith', email: '', password: 'exam', password_confirmation: 'exam')
+        expect(@user.save).to be false
+      end
+    end
   end
 end
